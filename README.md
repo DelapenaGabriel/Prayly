@@ -27,13 +27,13 @@ This project demonstrates a robust full-stack architecture using a **Java Spring
 - **Framework:** Spring Boot 3.x
 - **Security:** Spring Security & JWT (JSON Web Tokens)
 - **Database:** PostgreSQL
-- **ORM:** Spring Data JPA / Hibernate
+- **ORM:** Spring Data JDBC
 
 ### Frontend
 - **Framework:** Vue.js 3 (Composition API)
 - **Build Tool:** Vite
 - **State Management:** Pinia
-- **Styling:** Tailwind CSS / Bootstrap (Choose one)
+- **Styling:** CSS
 - **HTTP Client:** Axios
 
 ## 🚀 Getting Started
@@ -45,6 +45,6 @@ This project demonstrates a robust full-stack architecture using a **Java Spring
 - Maven (or Gradle)
 
 ### 1. Database Setup
-Create a PostgreSQL database named `prayly_db` (or whatever you prefer):
+Create a PostgreSQL database named `PraylyDB` (or whatever you prefer):
 ```sql
-CREATE DATABASE prayly_db;
+CREATE DATABASE PraylyDB;
