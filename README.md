@@ -1,44 +1,50 @@
 # 🙏 Prayly
 
-> **Connect, Share, and Intercede.**  
-> A dedicated space for sharing prayer requests and lifting others up in spirit.
+> **Connect, Share, and Intercede.**
+> A full-stack web application connecting those in need of prayer with a community ready to intercede.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
-[![Website](https://img.shields.io/website-up-down-green-red/http/monip.org.svg)](https://your-live-demo-link.com)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
+![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 
 ## 📖 About
-**Prayly** is a web application designed to bridge the gap between those in need of spiritual support and a community ready to pray.[[1](https://www.google.com/url?sa=E&q=https%3A%2F%2Fvertexaisearch.cloud.google.com%2Fgrounding-api-redirect%2FAUZIYQFBa1QBY_Hq3Ib2hTnkSJ9B_Uy3J3u70Uun3ujUde5XgTzcR3IDyLg1dJnR2Ma3NODzBzi2EFgom8ph2l7Nf99cFXbKIWO4hFABeZ-YifakC1agLS4QtnfK1nBgJ0_aQLvUAQZPAfROWH2UtWLYl-3Ga17Hjb_ncm_m_FRTV8TQEdZ8LVdL_Haw93GzinyhEYziUXkUiTg%3D)] In a digital age where connection often feels superficial, Prayly aims to bring depth back to social interaction by focusing on empathy, intercession, and encouragement.
+**Prayly** is a platform designed to foster spiritual support. It allows users to post prayer requests, receive notifications when others are praying for them, and track "Praise Reports" when prayers are answered.
 
-Whether you are facing a difficult season and need someone to stand with you in faith, or you want to offer your time to pray for others, Prayly provides a simple, distraction-free platform to make those connections happen.
+This project demonstrates a robust full-stack architecture using a **Java Spring Boot** backend to handle RESTful APIs and business logic, coupled with a reactive **Vue.js** frontend for a seamless user experience, all powered by a **PostgreSQL** database.
 
 ## ✨ Features
-
-- **📿 Post Prayer Requests:** Users can submit detailed prayer requests for themselves or loved ones.
-- **❤️ "I Prayed for You":** A simple interaction button that notifies the requester that someone has just lifted them up in prayer.
-- **🔒 Privacy Controls:** Option to post requests anonymously or visible only to a registered community.
-- **🔔 Updates & Praise Reports:** Users can post updates to their requests to share answered prayers and progress.
-- **🏷️ Categorization:** Filter requests by categories (e.g., Health, Family, Guidance, Employment).
-- **🛡️ Moderation System:** Built-in tools to report inappropriate content and ensure a safe, supportive environment.
+- **Create & Manage Requests:** Users can post public or anonymous prayer requests.
+- **Intercession Button:** A "Pray" button that increments a counter and notifies the requester.
+- **Feed Filtering:** Filter requests by category (Healing, Guidance, Family, etc.) or recency.
+- **User Dashboard:** View your prayer history and requests you are following.
+- **Praise Reports:** Mark requests as "Answered" and share the story.
 
 ## 🛠️ Tech Stack
 
-*(Customize this section based on your actual stack)*
-- **Frontend:** React.js / Next.js / Vue
-- **Backend:** Node.js / Express / Django / Laravel
-- **Database:** MongoDB / PostgreSQL / Firebase
-- **Authentication:** JWT / Auth0 / Firebase Auth
+### Backend
+- **Language:** Java (JDK 17+)
+- **Framework:** Spring Boot 3.x
+- **Security:** Spring Security & JWT (JSON Web Tokens)
+- **Database:** PostgreSQL
+- **ORM:** Spring Data JPA / Hibernate
+
+### Frontend
+- **Framework:** Vue.js 3 (Composition API)
+- **Build Tool:** Vite
+- **State Management:** Pinia
+- **Styling:** Tailwind CSS / Bootstrap (Choose one)
+- **HTTP Client:** Axios
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js (v14 or higher)
-- npm or yarn
-- MongoDB (local or Atlas)
+- Java JDK 17 or higher
+- Node.js & npm
+- PostgreSQL installed and running locally
+- Maven (or Gradle)
 
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/prayly.git
-   cd prayly
+### 1. Database Setup
+Create a PostgreSQL database named `prayly_db` (or whatever you prefer):
+```sql
+CREATE DATABASE prayly_db;
